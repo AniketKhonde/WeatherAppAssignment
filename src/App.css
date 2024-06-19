@@ -1,0 +1,297 @@
+/* Global styles */
+body {
+  text-align: center; /* Center-align text */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* Gradient background */
+  background-size: 400% 400%; /* Background size for gradient animation */
+  animation: gradient 15s ease infinite; /* Gradient animation */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex; /* Flex container */
+  align-items: center; /* Center-align items vertically */
+  justify-content: space-evenly; /* Evenly distribute space between items */
+  margin-bottom: 50px; /* Bottom margin */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+/* Search container styles */
+.search-container {
+  display: flex; /* Flex container */
+  align-items: center; /* Center-align items vertically */
+  justify-content: center; /* Center-align items horizontally */
+  margin: 20px; /* Margin */
+  position: relative; /* Relative positioning */
+}
+
+/* Search bar styles */
+.searchbar {
+  width: 300px; /* Width of the search bar */
+  height: 40px; /* Height of the search bar */
+  padding: 0 15px; /* Padding */
+  border: 2px solid #ccc; /* Border */
+  border-radius: 25px; /* Border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+  font-size: 16px; /* Font size */
+  transition: border-color 0.3s ease; /* Transition effect */
+}
+
+/* Search bar focus styles */
+.searchbar:focus {
+  border-color: #007BFF; /* Border color on focus */
+  outline: none; /* Remove outline */
+}
+
+/* Clear button styles */
+.clear-button {
+  position: absolute; /* Absolute positioning */
+  right: 70px; /* Right position */
+  background: none; /* Transparent background */
+  border: none; /* No border */
+  font-size: 18px; /* Font size */
+  color: #999; /* Text color */
+  cursor: pointer; /* Cursor style */
+  transition: color 0.3s ease; /* Transition effect */
+}
+
+/* Clear button hover styles */
+.clear-button:hover {
+  color: #333; /* Text color on hover */
+}
+
+/* Search button styles */
+.search-button {
+  height: 40px; /* Height of the button */
+  margin-left: 10px; /* Left margin */
+  padding: 0 15px; /* Padding */
+  border: none; /* No border */
+  border-radius: 20px; /* Border radius */
+  background-color: #007BFF; /* Background color */
+  color: white; /* Text color */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  transition: background-color 0.3s ease; /* Transition effect */
+}
+
+/* Search button hover styles */
+.search-button:hover {
+  background-color: #0056b3; /* Background color on hover */
+}
+
+/* General button styles */
+.buttons {
+  display: inline-block; /* Inline-block element */
+  padding: 10px 20px; /* Padding */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Font weight */
+  text-align: center; /* Center-align text */
+  text-decoration: none; /* No underline */
+  color: #fff; /* Text color */
+  background-color: #007BFF; /* Background color */
+  border: 2px solid #007BFF; /* Border */
+  border-radius: 25px; /* Border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Transition effects */
+  cursor: pointer; /* Cursor style */
+}
+
+/* General button hover effects */
+.buttons:hover {
+  background-color: #0056b3; /* Background color on hover */
+  border-color: #0056b3; /* Border color on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+  transform: translateY(-2px); /* Move element up on hover */
+}
+
+/* General button focus styles */
+.buttons:focus {
+  outline: none; /* Remove outline */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Box shadow on focus */
+}
+
+/* General button active styles */
+.buttons:active {
+  background-color: #004085; /* Background color on active */
+  border-color: #004085; /* Border color on active */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Box shadow on active */
+  transform: translateY(1px); /* Move element down on active */
+}
+
+/* Favorites dropdown container styles */
+.favorites-dropdown {
+  position: relative; /* Relative positioning */
+  margin-left: 10px; /* Left margin */
+}
+
+/* Favorites dropdown content styles */
+.favorites-dropdown-content {
+  border-radius: 5px; /* Border radius */
+  min-width: 150px; /* Minimum width */
+  background-color: rgb(75, 64, 64); /* Background color */
+  position: absolute; /* Absolute positioning */
+  top: 100%; /* Position below parent */
+  display: none; /* Initially hidden */
+  z-index: 1; /* Z-index */
+}
+
+/* Dropdown item styles */
+.dropdown {
+  display: flex; /* Flex container */
+  border-radius: 5px; /* Border radius */
+  justify-content: space-around; /* Evenly distribute space */
+  text-align: left; /* Left-align text */
+}
+
+/* Delete icon styles */
+.deleteIcon {
+  width: 15px; /* Width */
+  height: 15px; /* Height */
+}
+
+/* Favorites dropdown hover styles */
+.favorites-dropdown:hover .favorites-dropdown-content {
+  display: block; /* Show dropdown on hover */
+  max-height: 200px; /* Maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Weather display container styles */
+.weather-display {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* Gradient background */
+  width: 50%; /* Width */
+  margin-left: 25%; /* Left margin */
+  border: 2px solid black; /* Border */
+  border-radius: 10px; /* Border radius */
+  display: flex; /* Flex container */
+  flex-direction: column; /* Column direction */
+  align-items: center; /* Center-align items */
+  justify-content: center; /* Center content */
+}
+
+/* Weather data container styles */
+.data {
+  border: 1px solid black; /* Border */
+  background-color:white; /* Background color */
+  border-radius: 10px; /* Border radius */
+  width: 100%; /* Width */
+  max-width: 600px; /* Maximum width */
+  margin: 20px 0; /* Margin */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 5); /* Box shadow */
+}
+
+/* Data container styles */
+.datacontainer {
+  display: flex; /* Flex container */
+  align-items: center; /* Center-align items vertically */
+  justify-content: center; /* Center-align items horizontally */
+}
+
+/* Description styles */
+.weather-display .description {
+  margin-right: 30px; /* Right margin */
+  display: flex; /* Flex container */
+  align-items: center; /* Center-align items vertically */
+  justify-content: center; /* Center-align items horizontally */
+  font-weight: 900; /* Font weight */
+  font-size: 28px; /* Font size */
+}
+
+/* Description image styles */
+.weather-display .description img {
+  align-items: center; /* Center-align items vertically */
+  margin-right: 10px; /* Right margin */
+  width: 100px; /* Width */
+  height: 100px; /* Height */
+  /* Adjust the size as needed */
+}
+
+/* Icons styles */
+.icons {
+  font-size: large; /* Font size */
+  font-weight: bold; /* Font weight */
+  display: flex; /* Flex container */
+  align-items: center; /* Center-align items vertically */
+}
+
+/* Five day forecast image styles */
+.fivedata .forecast-day img {
+  margin-right: 10px; /* Right margin */
+  width: 50px; /* Width */
+  height: 50px; /* Height */
+  /* Adjust the size as needed */
+}
+
+/* Data container 1 styles */
+.datacontainer1 {
+  text-align: left; /* Left-align text */
+  margin: 30px; /* Margin */
+}
+
+/* Data container 2 styles */
+.datacontainer2 {
+  text-align: left; /* Left-align text */
+  margin: 30px; /* Margin */
+}
+
+/* Selected day styles */
+.selected-day {
+  background-color: white; /* Background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 5); /* Box shadow */
+  border: 2px solid black; /* Border */
+  border-radius: 10px; /* Border radius */
+  width: 100%; /* Width */
+  max-width: 600px; /* Maximum width */
+  margin: 20px 0; /* Margin */
+}
+
+/* Five day forecast styles */
+.fivedata {
+  width: 100%; /* Width */
+  max-width: 600px; /* Maximum width */
+  margin: 20px 0; /* Margin */
+}
+
+/* Forecast container styles */
+.forecast {
+  border-radius: 10px; /* Border radius */
+  display: flex; /* Flex container */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 10px 0; /* Padding */
+}
+
+/* Forecast day styles */
+.forecast-day {
+  min-width: 150px; /* Minimum width */
+  border: 1px solid black; /* Border */
+  background-color: #ccc; /* Background color */
+  border-radius: 5px; /* Border radius */
+  margin-right: 10px; /* Right margin */
+  padding: 10px; /* Padding */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Forecast day paragraph styles */
+.forecast-day p {
+  margin: 5px 0; /* Margin */
+}
+
+/* Forecast day hover styles */
+.forecast-day:hover {
+  background-color: #f0f0f0; /* Background color on hover */
+}
+
+/* Heading styles */
+.heading {
+  margin: 20px; /* Margin */
+  display: flex; /* Flex container */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center-align items vertically */
+}
+
+/* Dropdown text styles */
+.dropdowntext {
+  border-radius: 5px; /* Border radius */
+}
