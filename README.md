@@ -15,7 +15,8 @@ git clone https://github.com/AniketKhonde/WeatherAppAssignment.git
 
 # Navigate into the project directory:
 cd WeatherApp
-Install dependencies using npm or yarn:
+
+# Install dependencies using npm or yarn:
 npm install
 # or
 yarn install
