@@ -10,13 +10,12 @@ Node.js (v14.x or higher)
 npm (v6.x or higher) or yarn (v1.x or higher)
 
 # Installation
-Clone the repository to your local machine:
+Clone the repository to your local machine or download code:
 git clone https://github.com/AniketKhonde/WeatherAppAssignment.git
 
 # Navigate into the project directory:
-cd weather-app
+cd WeatherApp
 Install dependencies using npm or yarn:
-
 npm install
 # or
 yarn install
@@ -27,20 +26,20 @@ Visit OpenWeatherMap and sign up for a free account.
 Once logged in, navigate to your account dashboard.
 Copy your API key (APPID) from the dashboard.
 
-# After obtaining your API key:
+# After obtaining your API key(IMP):
 Create a .env file in the root directory of the project.
 
 # Add your API key to the .env file:
 REACT_APP_OPENWEATHER_API_KEY=your_api_key_here
 Replace your_api_key_here with your actual API key obtained from OpenWeatherMap.
 
-# Running the Application
-To start the development server and run the Weather app:
 
-npm start
-# or
-yarn start
-This will open the application in your default web browser at http://localhost:3000.
+# Running the Application
+Start the JSON server:
+npm run server
+after starting server to run the Weather app:
+npm run dev
+This will open the application in your default web browser at http://localhost:3000 or any other.
 
 # Usage
 Enter a city name in the search bar and click "Search" to fetch the current weather and 5-day forecast.
