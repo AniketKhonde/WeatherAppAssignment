@@ -39,7 +39,7 @@ Replace your_api_key_here with your actual API key obtained from OpenWeatherMap.
 # Start the JSON server:
 npm run server
 # after starting server to run the Weather app:
-npm run dev
+npm run dev.
 This will open the application in your default web browser at http://localhost:3000 or any other.
 
 # Usage
