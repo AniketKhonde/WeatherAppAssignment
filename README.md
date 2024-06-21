@@ -30,7 +30,7 @@ Copy your API key (APPID) from the dashboard.
 # After obtaining your API key(IMP):
 Create a .env file in the root directory of the project.
 
-# Add your API key to the .env file:
+# Add your API key to the .env file(imp):
 REACT_APP_OPENWEATHER_API_KEY=your_api_key_here
 Replace your_api_key_here with your actual API key obtained from OpenWeatherMap.
 
